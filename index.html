@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Spencer Beaver">
+    <meta name="description" content="">
+
+    <meta proptery="og:image" content="">
+    <meta property="og.title" content="">
+    <meta property="og.description" content="">
+
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/OpenGraphDataImage.png" type="image/x-icon">
+    <style>
+        body {
+            background-image: url('media/lightBackground.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;   
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="data.json" method="POST">
+            <fieldset>
+                <legend>Links to other pages</legend>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="homepage.html">Home Page</a>
+                        </li>
+                        <li>
+                            <a href="quiz.html">Quiz</a>
+                        </li>
+                        <li>
+                            <a href="survey.html">Survey</a>
+                        </li>
+                    </ul>
+                </nav>
+            </fieldset>
+
+            <h1>Welcome to my site!</h1>
+            <p><em>On this site you can take our short quiz and then you can fill out our survey.</em></p>
+            <p><strong>The only way we can get better is by hearing what you have to say!</strong></p>
+            <h3>Log in Below</h3>
+
+            <fieldset>
+                <legend>User Information</legend>
+                <ul>
+                    <li>
+                        <label for="name">User Name</label>
+                        <input type="text" id="name" name="user.name">
+                    </li>
+                    <li>
+                        <label for="PW">Password</label>
+                        <input type="password" id="PW" name="user.PW">
+                    </li>
+                    <li>
+                        <label for="IDnum">User Identification Number</label>
+                        <input type="text" id="IDnum" name="user.IDnum">
+                    </li>
+                    <li>
+                        <label for="date">Today's Date</label>
+                        <input type="text" id="date" name="user.date">
+                    </li>
+                    <button type="submit">Submit</button>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
